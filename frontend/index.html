@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>LectureAI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>LectureAI</h1>
+        <p>ИИ-помощник преподавателя</p>
+    </header>
+
+    <main>
+        <section>
+            <video id="video" controls muted></video>
+        </section>
+
+        <section>
+            <button id="start">Начать запись</button>
+            <button id="stop" disabled>Остановить</button>
+
+            <p id="status">Ожидание</p>
+        </section>
+
+        <section>
+            <h2>Распознанная речь</h2>
+            <div id="transcript"></div>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
